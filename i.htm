@@ -1,0 +1,10 @@
+<script>
+const map={"/i":"https://docs.google.com/forms/d/e/1FAIpQLSfdFwcOTdJshpehhcQPZxcEMjeEC9y3FO3LKvsINNY_2Y5kVw/viewform","/page2":"https://new.com/page2"};
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-XXXXXXXXXX');
+const src=new URLSearchParams(location.search).get('src')||'/';
+gtag('event','redirect',{event_category:'Nav',event_label:src});
+location.replace(map[src]||'https://pragament.com');
+</script>
