@@ -4,7 +4,7 @@ window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());
 gtag('config','G-XXXXXXXXXX');
-const src=new URLSearchParams(location.search).get('src')||'/';
+const src=new URLSearchParams(location.search).get('s')||'/';
 gtag('event','redirect',{event_category:'Nav',event_label:src});
 location.replace(map[src]||'https://pragament.com');
 </script>
